@@ -44,15 +44,16 @@
       font-family: sans-serif;
     }
 
-    /* Mist styling */
+    /* Mist Effect */
     .mist {
       position: absolute;
       top: 0;
       left: 0;
       width: 200%;
       height: 200%;
-      background: url('https://i.imgur.com/G1G5USt.png') repeat;
-      opacity: 0.08;
+      background: url('https://i.ibb.co/Y35hFVW/fog-texture.png') repeat;
+      background-size: cover;
+      opacity: 0.06;
       animation: drift 120s linear infinite;
       z-index: 1;
       pointer-events: none;
@@ -67,7 +68,7 @@
       }
     }
 
-    /* Audio player */
+    /* Audio Controls */
     .audio-container {
       position: absolute;
       bottom: 20px;
@@ -80,17 +81,22 @@
   </style>
 </head>
 <body>
+  <!-- Mist Overlay -->
   <div class="mist"></div>
 
+  <!-- Title -->
   <div class="brand">Candle Witch Lab</div>
+
+  <!-- Tagline -->
   <h1>
     Witchy candles born of science & shadow.<br>
     Shop coming soon <span class="emojis">🧪🖤</span>
   </h1>
 
+  <!-- Sound -->
   <div class="audio-container">
     <audio controls autoplay loop muted>
-      <source src="https://cdn.pixabay.com/audio/2022/03/25/audio_3c0f1fe7e0.mp3" type="audio/mpeg">
+      <source src="https://cdn.pixabay.com/audio/2023/04/23/audio_daf9fd5e96.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
   </div>
