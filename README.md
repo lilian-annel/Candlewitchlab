@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Candlewitch Lab</title>
+  <title>Candle Witch Lab</title>
   <style>
     body {
       margin: 0;
@@ -18,19 +18,6 @@
       text-align: center;
     }
 
-    h1 {
-      max-width: 90%;
-      font-size: 2rem;
-      line-height: 1.6;
-      background: linear-gradient(135deg, #b8860b, #8b008b);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .coming-soon {
-      font-size: 1.2rem;
-      color: #aaa;
-      margin-top: 1rem;
     }
   </style>
 </head>
