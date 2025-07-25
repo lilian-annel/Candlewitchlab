@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -51,9 +52,9 @@
       left: 0;
       width: 200%;
       height: 200%;
-      background: url('https://i.ibb.co/Y35hFVW/fog-texture.png') repeat;
+      background: url('https://raw.githubusercontent.com/hampusborgos/cdn/main/fog-overlay/fog1.png') repeat;
       background-size: cover;
-      opacity: 0.06;
+      opacity: 0.07;
       animation: drift 120s linear infinite;
       z-index: 1;
       pointer-events: none;
@@ -64,7 +65,7 @@
         transform: translate(0, 0);
       }
       100% {
-        transform: translate(-25%, -25%);
+        transform: translate(-20%, -20%);
       }
     }
 
@@ -96,7 +97,7 @@
   <!-- Sound -->
   <div class="audio-container">
     <audio controls autoplay loop muted>
-      <source src="https://cdn.pixabay.com/audio/2023/04/23/audio_daf9fd5e96.mp3" type="audio/mpeg">
+      <source src="https://files.catbox.moe/03c47u.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
   </div>
