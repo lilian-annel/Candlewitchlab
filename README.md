@@ -67,7 +67,6 @@
       opacity: 0.1;
     }
 
-    /* 5 mist blobs with different sizes and speeds */
     .mist div:nth-child(1) {
       width: 300px;
       height: 300px;
@@ -135,7 +134,7 @@
       100% { transform: translate(-25px, -15px); }
     }
 
-    /* Audio Controls */
+    /* Custom audio controls container */
     .audio-container {
       position: fixed;
       bottom: 20px;
@@ -202,12 +201,12 @@
     Shop coming soon <span class="emojis">🧪🖤</span>
   </h1>
 
-  <div class="audio-container">
+  <div class="audio-container" aria-label="Audio controls">
     <button id="mute-btn" aria-label="Toggle sound">🔈</button>
     <input id="volume-slider" type="range" min="0" max="1" step="0.01" value="0" aria-label="Volume slider" />
   </div>
 
-  <audio id="ambient-audio" loop>
+  <audio id="ambient-audio" loop preload="auto">
     <source src="https://files.catbox.moe/03c47u.mp3" type="audio/mpeg" />
     Your browser does not support the audio element.
   </audio>
@@ -217,16 +216,14 @@
     const muteBtn = document.getElementById('mute-btn');
     const volumeSlider = document.getElementById('volume-slider');
 
-    // Start muted (required by most browsers for autoplay)
+    // Start muted with volume 0 for autoplay compliance
     audio.volume = 0;
     audio.muted = false;
     audio.play().catch(() => {
-      // Autoplay might fail if not muted, fallback to muted
       audio.muted = true;
       audio.play();
     });
 
-    // Toggle mute/unmute button
     muteBtn.addEventListener('click', () => {
       if (audio.muted || audio.volume === 0) {
         audio.muted = false;
@@ -239,7 +236,6 @@
       }
     });
 
-    // Volume slider control
     volumeSlider.addEventListener('input', (e) => {
       const volume = parseFloat(e.target.value);
       audio.volume = volume;
