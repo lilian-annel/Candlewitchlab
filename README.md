@@ -187,7 +187,7 @@
   </style>
 </head>
 <body>
-  <div class="mist">
+  <div class="mist" aria-hidden="true">
     <div></div>
     <div></div>
     <div></div>
@@ -206,8 +206,8 @@
     <input id="volume-slider" type="range" min="0" max="1" step="0.01" value="0" aria-label="Volume slider" />
   </div>
 
-  <audio id="ambient-audio" loop preload="auto">
-    <source src="https://files.catbox.moe/03c47u.mp3" type="audio/mpeg" />
+  <audio id="ambient-audio" loop preload="auto" crossorigin="anonymous">
+    <source src="https://cdn.jsdelivr.net/gh/stevekim01/ambient-sounds/creak-wind.mp3" type="audio/mpeg" />
     Your browser does not support the audio element.
   </audio>
 
