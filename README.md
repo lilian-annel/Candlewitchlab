@@ -1,17 +1,14 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Candlewitch Lab</title>
+  <title>Candle Witch Lab</title>
   <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
-      background-color: #0b0b0b;
-      color: #dcdcdc;
-      font-family: 'UnifrakturCook', cursive;
+      background-color: #0a0a0a;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -20,20 +17,24 @@
     }
 
     h1 {
-      max-width: 90%;
+      font-family: 'UnifrakturCook', cursive;
       font-size: 2.5rem;
       line-height: 1.4;
-      background: linear-gradient(120deg, #4b0015, #240046, #101010);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: #f0e6dc;
+      text-shadow: 2px 2px 4px #3b0a0a;
+      max-width: 90%;
       letter-spacing: 1px;
-      text-shadow: 0 0 10px #2b0f2b;
+    }
+
+    .emojis {
+      font-family: sans-serif;
     }
   </style>
 </head>
 <body>
-  <div>
-    <h1>Witchy candles born of science & shadow. Shop coming soon 🧪🖤</h1>
-  </div>
+  <h1>
+    Witchy candles born of science & shadow.<br>
+    Shop coming soon <span class="emojis">🧪🖤</span>
+  </h1>
 </body>
 </html>
